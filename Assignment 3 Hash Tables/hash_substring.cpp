@@ -55,9 +55,6 @@ bool are_equal(string s1, string s2) {
 std::vector<int> get_occurrences(const Data& input) {
     const string& s = input.pattern, t = input.text;
     std::vector<int> ans;
-    /*for (size_t i = 0; i + s.size() <= t.size(); ++i)
-        if (t.substr(i, s.size()) == s)
-            ans.push_back(i);*/
 	long long p = 100000123; //check how to select this, causes few tests to fail
 	long long x = rand() % (p-1) + 1;
 	long long pHash = poly_hash(s, p, x);
