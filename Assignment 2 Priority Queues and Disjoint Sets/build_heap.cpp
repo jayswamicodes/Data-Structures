@@ -85,6 +85,7 @@ class HeapBuilder {
           swaps_.push_back(make_pair(i, j));
         }
       }*/
+	// Faster Implementation
 	buildHeap(data_);
   }
 
