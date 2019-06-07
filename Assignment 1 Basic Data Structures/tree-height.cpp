@@ -56,7 +56,7 @@ int main_with_large_stack_space() {
     nodes[child_index].key = child_index;
   }
   
-  // Replace this code with a faster implementation
+  // Replace the commented code with a faster implementation
   int maxHeight = 0;
   /*for (int leaf_index = 0; leaf_index < n; leaf_index++) {
     int height = 0;
@@ -66,6 +66,8 @@ int main_with_large_stack_space() {
   }*/
   //std::cout << nodes[root_index].children.size()<< ",";
   //maxHeight = max_height(nodes[0]);
+	
+ // Faster implementation than above code
   maxHeight = max_height(&nodes[root_index]);
   
   std::cout << maxHeight << std::endl;
